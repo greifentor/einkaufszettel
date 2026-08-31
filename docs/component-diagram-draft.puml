@@ -1,0 +1,19 @@
+@startuml
+
+actor user
+
+component einkaufsapp as "einkaufsapp\n(Android)"
+
+component restserver as "rest-server\n(Spring Boot)"
+interface rest as "REST"
+restserver -U- rest
+
+component stammdatenapp as "stammdatenapp\n(swing)"
+
+stammdatenapp -L-( rest
+einkaufsapp -R-( rest
+
+user .D.> einkaufsapp : "Unterstützung beim Einkauf\nVerwaltung Einkaufszettel"
+user .D.> stammdatenapp : "Pflege der Stammdaten"
+
+@enduml
