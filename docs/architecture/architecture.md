@@ -7,7 +7,10 @@ This document contains architecture descriptions and documentation.
 
 ### Requirements Overview
 
-TBD
+* Maintenance of shops, products and mandators.
+* Maintain sort orders of products in shops.
+* Shopping list maintenance (add and confirm products).
+* Backup and restore of mandator data.
 
 
 ### Quality Goals
@@ -19,7 +22,7 @@ TBD
 
 ### Relevant Stakeholders
 
-TBD
+* The Developers.
 
 
 ## Architecture Constraints
